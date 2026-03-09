@@ -25,11 +25,11 @@ git ls-tree --name-only origin/terminal-skills .claude/skills/
 
 For each skill directory listed:
 
-1. Check if it contains an `entrypoint.md` file:
+1. Check if it contains a `SKILL.md` file:
    ```bash
-   git ls-tree -r --name-only origin/terminal-skills <skill_dir>/ | grep entrypoint.md
+   git ls-tree -r --name-only origin/terminal-skills <skill_dir>/ | grep SKILL.md
    ```
-   Skip the skill if no `entrypoint.md` is found.
+   Skip the skill if no `SKILL.md` is found.
 
 2. Check if the skill is already extracted — skip if the destination directory exists:
    ```bash
@@ -46,19 +46,15 @@ For each skill directory listed:
    fi
    ```
 
-## Step 3: Report loaded skills
+## Step 3: Report success
+> Just tell the user the skills for the repo have been loaded KEEP OUTPUT TO A MAX TWO LINES if so and conitnue with the users request using these skills as needed.
 
-For each successfully loaded skill, report:
-- Skill name
-- Full path: `/tmp/<repo-name>/terminal-skills/<skill-name>/`
-- Entrypoint: `/tmp/<repo-name>/terminal-skills/<skill-name>/entrypoint.md`
+## Step 4: Read the skill's SKILL.md and note available resources
 
-## Step 4: CRITICAL — Read all loaded skills
-
-> **CRITICAL: You MUST read every `entrypoint.md` file listed above BEFORE doing ANY other work.**
+> **CRITICAL: You MUST read each skill's `SKILL.md` file BEFORE doing ANY other work.**
 >
-> Do NOT proceed with any user task, code change, or investigation until you have read and internalized
-> the contents of ALL loaded skill entrypoints. These skills contain essential context, patterns, and
-> instructions that govern how work should be done in this repository.
+> `SKILL.md` describes the skill and how to use its subdirectories (e.g. `past_prs/`, `bug_reports/`, `how_to_test/`).
+> Do NOT read the contents of subdirectories yet — only read them when their content is relevant to the current task.
 >
-> Failure to read these skills first will result in incorrect or non-compliant work.
+> These skills contain context, patterns, and instructions for working in this repository.
+> They should be consulted as needed throughout future work.
