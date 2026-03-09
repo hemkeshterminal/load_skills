@@ -1,0 +1,13 @@
+{
+  "name": "hemkeshterminal-load-skills",
+  "owner": {
+    "name": "Terminal.sh"
+  },
+  "plugins": [
+    {
+      "name": "load-skills",
+      "source": "./load-skills",
+      "description": "Load skills from origin/terminal-skills branch into a local cache and enforce reading them before any work"
+    }
+  ]
+}

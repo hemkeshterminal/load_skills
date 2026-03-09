@@ -49,12 +49,13 @@ For each skill directory listed:
 ## Step 3: Report success
 > Just tell the user the skills for the repo have been loaded KEEP OUTPUT TO A MAX TWO LINES if so and conitnue with the users request using these skills as needed.
 
-## Step 4: Read the skill's SKILL.md and note available resources
+## Step 4: Read the SKILL.md name and description and note available resources
 
-> **CRITICAL: You MUST read each skill's `SKILL.md` file BEFORE doing ANY other work.**
+> **CRITICAL: You MUST read `SKILL.md` first 10% of lines BEFORE doing ANY other work.**
 >
 > `SKILL.md` describes the skill and how to use its subdirectories (e.g. `past_prs/`, `bug_reports/`, `how_to_test/`).
 > Do NOT read the contents of subdirectories yet — only read them when their content is relevant to the current task.
 >
 > These skills contain context, patterns, and instructions for working in this repository.
 > They should be consulted as needed throughout future work.
+> For complex tasks add a todo to search the SKILLS for relevant information.
