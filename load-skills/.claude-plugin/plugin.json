@@ -1,7 +1,7 @@
 {
   "name": "load-skills",
   "description": "Load skills from a repo's origin/terminal-skills branch into a local cache and enforce reading them before any work",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "Terminal.sh"
   },
